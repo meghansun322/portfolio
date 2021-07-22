@@ -1,0 +1,455 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(229, 229, 243);
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-border {
+  background-color: rgb(147, 197, 197);
+  min-height: 15px;
+}
+
+.pages-header {
+  font-size: 80px;
+  font-weight: 800;
+}
+
+.pages-subheading {
+  font-size: 35px;
+}
+
+.social-icons a i {
+  color: rgb(255, 255, 255);
+  margin: 0 8px;
+  padding-top: 20px;
+}
+
+/* Global View */
+
+.navbar {
+  position: sticky;
+  top: 0;
+}
+
+/* Nav Bar */
+
+.header {
+  background-color: rgb(247, 247, 247);
+  min-height: 100px;
+  padding: 0 25px;
+
+  /* font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif; */
+}
+
+.brand-name {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  color: rgb(15, 15, 15);
+  float: left;
+  padding: 30px 0;
+}
+
+.nav-right {
+  padding-top: 45px;
+  float: right;
+}
+
+.nav-right a {
+  font-size: 15px;
+  margin: 0 15px;
+  text-decoration: none;
+  color: rgb(37, 36, 36);
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+/* Description */
+
+.description {
+  background-color: rgba(155, 191, 221, 0.397);
+  align-items: center;
+  text-align: center;
+  padding: 25px;
+  font-family: "M PLUS 1p", sans-serif;
+}
+
+.description-text {
+  line-height: 1.8;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 30px;
+}
+
+.intro-text {
+  font-size: 80px;
+  font-weight: 800;
+  padding-top: 30px;
+}
+
+.description .social-icons {
+  padding-bottom: 60px;
+}
+
+.description .social-icons a i {
+  color: black;
+  margin: 0 25px;
+}
+
+/* Welcome */
+
+.welcome {
+  min-height: 200px;
+  background-color: rgb(236, 247, 248);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 40px;
+  align-items: center;
+}
+
+.welcome img {
+  max-height: 400px;
+}
+
+.welcome-text {
+  text-align: center;
+  margin: 0 15px;
+}
+
+.welcome-text h1 {
+  font-size: 30px;
+}
+
+.welcome-text p {
+  padding-top: 20px;
+  line-height: 2.5;
+}
+
+/* Interets */
+.interests-header {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 800;
+  font-size: 40px;
+  min-height: 60px;
+  background-color: rgb(147, 197, 197);
+  text-align: center;
+  padding: 10px;
+}
+
+.interests {
+  background-color: rgb(180, 224, 224);
+  min-height: 600px;
+  text-align: center;
+  padding: 20px;
+}
+
+.interest-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.interest-boxes img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover;
+  text-align: center;
+}
+
+.interest-item {
+  width: 30%;
+}
+
+.interest-item h1 {
+  padding: 20px;
+  padding-bottom: 30px;
+}
+
+.interest-item p {
+  padding-top: 20px;
+}
+
+/* Languages */
+
+.languages {
+  padding-bottom: 10px;
+}
+
+.languages h2 {
+  text-align: center;
+}
+
+.languages h4 {
+  text-align: center;
+}
+
+.languages .card img {
+  max-width: 100px;
+  max-height: 100px;
+  padding: 20px;
+}
+
+/* Footer */
+
+footer {
+  min-height: 30px;
+  background-color: rgb(16, 88, 88);
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+
+footer .social-icons {
+  margin-right: 20px;
+  padding-bottom: 15px;
+}
+
+footer .brand {
+  font-size: 15px;
+  margin-left: 20px;
+  padding-top: 25px;
+}
+
+/* About Section */
+
+.about-me {
+  min-height: 500px;
+  background-color: rgb(252, 252, 252);
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.about-me img {
+  max-height: 600px;
+  padding: 40px;
+}
+
+.about-text {
+  padding: 30px;
+}
+
+.about-text h1 {
+  text-align: center;
+  font-family: "Allura", cursive;
+  font-size: 60px;
+}
+
+.about-text p {
+  line-height: 2;
+  font-size: 17px;
+  text-indent: 40px;
+}
+
+.favorite-things-header {
+  min-height: 70px;
+  background-color: #add1ee;
+  text-align: center;
+  padding-top: 15px;
+}
+.favorite-things {
+  min-height: 500px;
+  background-color: #cae1f3;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.favorites-card {
+  background-color: #e0ebf5;
+  color: black;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+  width: 30%;
+  min-height: 150px;
+  margin-bottom: 40px;
+}
+
+.favorites-card h1 {
+  text-align: center;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.favorites-card h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.favorites-card p {
+  padding: 10px;
+  text-align: center;
+}
+
+/* Food Blog Page */
+
+.portfolio-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.food-description-text {
+  background-color: white;
+  min-height: 150px;
+  text-align: center;
+  padding: 25px;
+  line-height: 2.5;
+  font-size: 20px;
+}
+.food-img {
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.food-details {
+  padding-top: 10px;
+  color: transparent;
+  margin: 10px;
+}
+
+.food-details a {
+  font-family: "Times New Roman", Times, serif;
+  color: rgb(2, 2, 2);
+  font-size: 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.description-meghaneatsnc {
+  background-color: rgb(147, 197, 197);
+  min-height: 100px;
+  width: 100%;
+  text-align: center;
+  padding: 30px;
+}
+
+.description-meghaneatsnc a {
+  color: rgb(17, 72, 110);
+}
+
+/* Experience */
+
+.experience-description h1 {
+  min-height: 100px;
+  font-size: 30px;
+  padding-top: 35px;
+  text-align: center;
+}
+.project {
+  min-height: 300px;
+  background-color: rgb(14, 71, 71);
+}
+
+.cs-experience {
+  min-height: 250px;
+  background-color: rgb(83, 102, 102);
+}
+
+.cs-experience img {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.marketing-experience {
+  min-height: 250px;
+  background-color: rgb(119, 119, 172);
+}
+
+.digital-software {
+  min-height: 250px;
+  background-color: rgb(147, 237, 240);
+}
+
+.resume {
+  min-height: 100px;
+  background-color: rgb(252, 180, 153);
+}
+
+/* Contact Section */
+
+.pages-subheading a {
+  color: navy;
+}
+
+.contact-info {
+  background-color: rgb(243, 243, 243);
+  min-height: 500px;
+}
+
+.contact-info h1 {
+  text-align: center;
+  padding: 40px;
+  font-size: 60px;
+}
+
+.exit-section {
+  background-color: rgb(165, 196, 197);
+  min-height: 50px;
+}
+
+form {
+  margin-top: 50px;
+}
+
+.contact-info h2 {
+  font-size: 50px;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.contact-form {
+  text-align: center;
+}
+
+.contact-form input,
+.contact-form button,
+.contact-form textarea {
+  width: 600px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid gray;
+  color: rgb(12, 12, 12);
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: rgb(81, 158, 158);
+  border-color: transparent;
+  color: #ffff;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 50px;
+  margin-top: 20px;
+}
+
+form .submit:hover {
+  background-color: rgb(139, 172, 172);
+  cursor: pointer;
+}
