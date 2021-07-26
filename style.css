@@ -112,7 +112,7 @@ a {
 
 .welcome {
   min-height: 200px;
-  background-color: rgb(236, 247, 248);
+  background-color: rgb(255, 255, 255);
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 40px;
@@ -358,6 +358,13 @@ footer .brand {
 .project {
   min-height: 300px;
   background-color: rgb(14, 71, 71);
+}
+
+.experience-header {
+  min-height: 50px;
+  background-color: #ffffff;
+  text-align: left;
+  padding: 20px;
 }
 
 .cs-experience {
