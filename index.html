@@ -36,17 +36,29 @@
 
             <!-- Brand Name  -->
             <div class="brand-name">
-                Meghan Sun
+                <a href="index.html">Meghan Sun</a>
+                
             </div>
             <!-- Right Side Nav Buttons -->
-            <div class="nav-right">
-                <a class="active" href="index.html">HOME</a>
-                <a href="about.html">ABOUT ME</a>
-                <a href="experience.html">EXPERIENCE</a>
-                <a href="blog.html">FOOD PHOTOGRAPHY</a>
-                <a href="contact.html">CONTACT</a>
+            <div class="nav-menu nav-mobile-menu">
+                <li> <a class="active" href="index.html">HOME</a></li>
+
+                <li><a href="about.html">ABOUT ME</a></li>
+
+                <li><a href="experience.html">EXPERIENCE</a></li>
+
+                <li><a href="blog.html">FOOD PHOTOGRAPHY</a></li>
+
+                <li> <a href="contact.html">CONTACT</a></li>
+               
+    
             </div>
 
+            <div class="hamburger" onclick="onClickMenu()">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </div>
         </div>
     </section>
 
@@ -60,7 +72,7 @@
         <div class="intro-text">Meghan Sun</div>
         <div class="description-text">
             a computer science student, a UNC Tar Heel, a food enthusiast, and a food blogger passionate about seeking
-            new adventures and challenge thoughts everyday
+            new adventures and thoughts every day
         </div>
 
         <div class="social-icons">
@@ -88,10 +100,12 @@
 
 
     <!-- Interests -->
-    <section class="interests-header">My Current Interests</section>
+    <!-- <section class="interests-header">My Current Interests</section> -->
 
     <section class="interests">
-        <div class="interest-boxes">
+
+        <div class="interests-header">My Current Interests!</div>
+        <div class="interests-container">
             <div class="interest-item">
                 <h1>Data Science</h1>
                 <img src="images/data-science.jpg_fit=scale" alt="">
@@ -133,9 +147,11 @@
                 <p>Being able to tell a story and highlighting unique qualities fascinates me. I enjoy the challenge of creating creative content and editing photos always has been therapeutic for me. </p>
 
             </div>
-
-
         </div>
+            
+
+
+       
     </section>
 
 </body>
@@ -153,5 +169,7 @@
 
     </div>
 </footer>
+
+<script src="index.js"></script>
 
 </html>

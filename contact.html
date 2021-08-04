@@ -27,7 +27,7 @@
 <body>
 
 
-    <section class="navbar">
+    < <section class="navbar">
         <div class="top-border"></div>
 
         <!-- Header Section -->
@@ -36,17 +36,29 @@
 
             <!-- Brand Name  -->
             <div class="brand-name">
-                Meghan Sun
+                <a href="index.html">Meghan Sun</a>
+                
             </div>
             <!-- Right Side Nav Buttons -->
-            <div class="nav-right">
-                <a class="active" href="index.html">HOME</a>
-                <a href="about.html">ABOUT ME</a>
-                <a href="experience.html">EXPERIENCE</a>
-                <a href="blog.html">FOOD PHOTOGRAPHY</a>
-                <a href="contact.html">CONTACT</a>
+            <div class="nav-menu nav-mobile-menu">
+                <li> <a class="active" href="index.html">HOME</a></li>
+
+                <li><a href="about.html">ABOUT ME</a></li>
+
+                <li><a href="experience.html">EXPERIENCE</a></li>
+
+                <li><a href="blog.html">FOOD PHOTOGRAPHY</a></li>
+
+                <li> <a href="contact.html">CONTACT</a></li>
+               
+    
             </div>
 
+            <div class="hamburger" onclick="onClickMenu()">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </div>
         </div>
     </section>
 

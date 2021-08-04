@@ -35,17 +35,29 @@
 
             <!-- Brand Name  -->
             <div class="brand-name">
-                Meghan Sun
+                <a href="index.html">Meghan Sun</a>
+                
             </div>
             <!-- Right Side Nav Buttons -->
-            <div class="nav-right">
-                <a class="active" href="index.html">HOME</a>
-                <a href="about.html">ABOUT ME</a>
-                <a href="experience.html">EXPERIENCE</a>
-                <a href="blog.html">FOOD PHOTOGRAPHY</a>
-                <a href="contact.html">CONTACT</a>
+            <div class="nav-menu nav-mobile-menu">
+                <li> <a class="active" href="index.html">HOME</a></li>
+
+                <li><a href="about.html">ABOUT ME</a></li>
+
+                <li><a href="experience.html">EXPERIENCE</a></li>
+
+                <li><a href="blog.html">FOOD PHOTOGRAPHY</a></li>
+
+                <li> <a href="contact.html">CONTACT</a></li>
+               
+    
             </div>
 
+            <div class="hamburger" onclick="onClickMenu()">
+                <span id="bar1" class="bar"></span>
+                <span id="bar2" class="bar"></span>
+                <span id="bar3" class="bar"></span>
+            </div>
         </div>
     </section>
     <!-- Description about my interests -->
@@ -74,38 +86,62 @@
         <div class="experience-header">
             <h1>Projects and Assignments</h1>
         </div>
-        <!-- COVID-19 Website -->
 
-        <!-- To-do App -->
+        <div class="project-container flex">
+            <!-- COVID-19 Website -->
+            <div class="project-item">
+                <h1>COVID-19 Data Visualization Website</h1>
+            <img src="images/Covid-19 Project Img.jpeg" alt="">  
+            </div>
+        
 
-        <!-- Personal Website -->
+            <!-- To-do App -->
 
-        <!-- COMP 210 Dijastra Assignment -->
+            <!-- Personal Website -->
+            <div class="project-item">
+                <h1>Personal Website</h1>
+             <img src="images/Website-pic.png" alt="">   
+            </div>
+            
+            <div class="project-item">
+                <!-- COMP 210 Dijastra Assignment -->
+                <h1>Dijkstsra Algorithm Assignment</h1>
+            <img src="images/dijkstra-algo-img.jpeg" alt="">
+            </div>
+            
 
-        <!-- COMP 110 Weather Project -->
+            <!-- COMP 110 Weather Project -->  
+        </div>
+        
     </section>
 
     <!-- CS-related Experience -->
 
     <section class="cs-experience">
 
-        <div class="experience-header"><h1>Involvement</h1></div>
+        <div class="experience-header"><h1>Club Involvement</h1></div>
 
         <div class="cs-experience-container">
 
             <div class="cs-experience-box">
                 <!-- Girls Who Code -->
+                <h1>Girls Who Code</h1>
         <img src="images/gwclogo.jpeg" alt="">
+        
             </div>
             
             <div class="cs-experience-box">
                <!-- Rewrite the Code -->
+               <h1>Rewriting the Code</h1>
         <img src="images/RTClogo.png" alt="">
+      
             </div>
             
             <div class="cs-experience-box">
                  <!-- Computer Science + Social Good -->
+                 <h1>CS + Social Good</h1>
         <img src="images/CS+SGlogo.jpeg" alt="">
+       
             </div>
 
         </div>
@@ -159,41 +195,69 @@
     <section class="marketing-experience">
         <div class="experience-header"><h1>Experience</h1></div>
 
-        <!-- Andia's Social Media Marketing -->
-        <img src="images/Andia's-experience.JPG" alt="">
+        <div class="marketing-experience-container flex">
+          <!-- Andia's Social Media Marketing -->
+          <div class="marketing-experience-item">
+             <img src="images/Andia's-experience.JPG" alt="">
 
+            <div class="marketing-experience-text">
+            <a href="https://www.instagram.com/andiasicecream/"><h1>Andia's Homemade Ice Cream</h1></a>
+            <h2>Social Media Intern</h2>
+            
+            <!-- <p> I'm a Social Media Marketing Intern that develops creative content daily for an Instagram audience of over 14,300. I respond to comments and messages on Instagram and Facebook within 24 within to develop meaningful relationships with our guests. I have helped increased Instagram following by over 2,6000 followers and content interactions by 200% within 4 months.
+                </p> -->
+             </div> 
+          </div>
+        
+          <div class="marketing-experience-item">
+            <img src="images/MeghaneatsNC-experience.JPG" alt="">  
+
+            <div class="marketing-experience-text">
+           <a href="https://www.instagram.com/meghaneatsnc/"><h1>Meghaneatsnc</h1></a> 
+            <h2>Creator</h2>
+            <!-- <p> My goal with Meghaneatsnc is to share the amazing food and support local businesses in the North Carolina Triangle. I always make a point to research local businesses and restaurants to inform the public of its notable qualities. I produce self-taken food photographs and videos through Adobe Lightroom and Adobe Premiere Rush
+                I grew personal brand (+1000 followers from 0) within 6 months</p> -->
+                </div>
+          </div>
         <!-- MeghanEatsNC -->
-        <img src="images/MeghaneatsNC-experience.JPG" alt="">
+        
+        </div>
+        
     </section>
 
     <section class="languages">
-        <div class="experience-header"><h1>Language Experience</h1></div>
+        <div class="experience-header"><h1>Creative Software Experience</h1></div>
 
 
         <div class="flex">
             <div class="card">
-                <h4>Java</h4>
-                <img src="images/java-logo.png" alt="">
+                <h4>Adobe Lightroom</h4>
+                <img src="images/lightroom.png" alt="">
             </div>
 
             <div class="card">
-                <h4>Python</h4>
-                <img src="images/python-logo.png" alt="">
+                <h4>Adobe Premeire Rush</h4>
+                <img src="images/premiere-rush.png" alt="">
             </div>
 
             <div class="card">
-                <h4>HTML</h4>
-                <img src="images/html-logo.png" alt="">
+                <h4>VSCO</h4>
+                <img src="images/vsco.png" alt="">
             </div>
 
             <div class="card">
-                <h4>CSS</h4>
-                <img src="images/css-logo.png" alt="">
+                <h4>Canva</h4>
+                <img src="images/canva.png" alt="">
             </div>
 
             <div class="card">
-                <h4>JavaScript</h4>
-                <img src="images/JavaScript-logo.png" alt="">
+                <h4>Instagram</h4>
+                <img src="images/instagram.jpeg" alt="">
+            </div>
+
+            <div class="card">
+                <h4>TikTok</h4>
+                <img src="images/tiktok.png" alt="">
             </div>
         </div>
 
