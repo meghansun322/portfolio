@@ -20,8 +20,8 @@
   --clr-accent-lighter: rgb(198, 230, 230);
   --clr-accent-dark: rgb(16, 88, 88);
 
-  --fs-h1: 3rem;
-  --fs-h2: 2.25rem;
+  --fs-h1: 6rem;
+  --fs-h2: 2rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
 
@@ -29,14 +29,14 @@
     0.125em 0.125em 0.25em rgba(0, 0, 0, 0.15);
 }
 
-@media (min-width: 800px) {
+/* @media (min-width: 800px) {
   :root {
-    --fs-h1: 5rem;
+    --fs-h1: 8rem;
     --fs-h2: 4rem;
     --fs-h3: 1.5rem;
     --fs-body: 1.125rem;
   }
-}
+} */
 
 body {
   background-color: var(--clr-light);
@@ -51,9 +51,9 @@ a {
   text-decoration: none;
 }
 
-li {
+/* li {
   list-style: none;
-}
+} */
 
 .top-border {
   background-color: var(--clr-accent);
@@ -61,12 +61,18 @@ li {
 }
 
 .pages-header {
-  font-size: 80px;
+  font-size: var(--fs-h1);
   font-weight: var(--fw-bold);
 }
 
 .pages-subheading {
-  font-size: 35px;
+  font-size: var(--fs-h3);
+  padding-bottom: 0.5em;
+}
+
+.contact-link {
+  color: var(--clr-dark);
+  font-weight: var(--fw-bold);
 }
 
 .social-icons a i {
@@ -81,10 +87,14 @@ li {
   justify-content: space-evenly;
 }
 
+.active {
+  border-bottom: 0.2em solid var(--clr-accent);
+}
+
 @media (min-width: 800px) {
   :root {
-    --fs-h1: 4.5rem;
-    --fs-h2: 3.75rem;
+    --fs-h1: 4rem;
+    --fs-h2: 3rem;
     --fs-h3: 2rem;
     --fs-body: 1rem;
   }
@@ -129,6 +139,7 @@ li {
   align-items: center;
 }
 .nav-menu li {
+  list-style: none;
   margin-left: 3rem;
 }
 .nav-menu a {
@@ -166,6 +177,40 @@ li {
   transform: translateY(4px);
 }
 
+.nav-mobile-menu {
+  transition: 0.3s ease;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  min-height: 100vh;
+  z-index: 200;
+  background-color: var(--clr-light);
+  margin-top: 120px;
+}
+
+.nav-mobile-menu.active {
+  left: 0;
+}
+
+.nav-mobile-menu a {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border-bottom: 0.1em solid var(--clr-light);
+  text-align: center;
+  padding: 15px 16px;
+  background-color: var(--clr-accent-dark);
+  color: var(--clr-light);
+}
+
+.nav-mobile-menu a:hover {
+  background-color: var(--clr-accent-lighter);
+  color: var(--clr-accent-dark);
+}
+
 /* Description */
 
 .description {
@@ -198,6 +243,10 @@ li {
   margin: 0 25px;
 }
 
+.social-icons a i:hover {
+  color: var(--clr-accent-dark);
+}
+
 /* Welcome */
 
 .welcome {
@@ -227,6 +276,7 @@ li {
 .welcome-text p {
   padding-top: 20px;
   line-height: 2.5;
+  font-size: var(--fs-body);
 }
 
 /* Interets */
@@ -316,6 +366,10 @@ footer {
 footer .social-icons {
   margin-right: 20px;
   padding-bottom: 15px;
+}
+
+footer .social-icons a i:hover {
+  color: var(--clr-accent-lighter);
 }
 
 footer .brand {
@@ -456,6 +510,24 @@ footer .brand {
   padding-top: 35px;
   text-align: center;
 } */
+
+.resume-btn {
+  display: inline-block;
+  padding: 0.4em 1.2em;
+  box-sizing: border-box;
+  border: 0.121em solid var(--clr-dark);
+  border-radius: 0.15em;
+  text-align: center;
+  color: var(--clr-dark);
+  margin: 0 0.3em 0.3em 0;
+  transition: all 0.2s;
+}
+
+.resume-btn:hover {
+  color: var(--clr-light);
+  background-color: var(--clr-accent-dark);
+}
+
 .project {
   min-height: 300px;
   background-color: var(--clr-light);
@@ -508,7 +580,15 @@ footer .brand {
   -webkit-transition: all 0.4s ease-in-out 0s;
   -ms-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
-  text-align: center;
+  /* text-align: center;
+  vertical-align: middle;
+  justify-content: center; */
+}
+
+.img-container .overlay-center {
+  height: 100%;
+  width: 100%;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
@@ -523,10 +603,6 @@ footer .brand {
 .img-container:hover,
 .img-container .overlay:hover {
   opacity: 1;
-}
-
-.marketing-experience-item .img-container {
-  min-height: 400px;
 }
 
 .project-container p {
@@ -585,7 +661,8 @@ footer .brand {
 
 .marketing-experience {
   min-height: 250px;
-  background-color: var(--clr-accent-dark);
+  background-color: var(--clr-accent-lighter);
+  text-align: center;
 }
 
 .marketing-experience img {
@@ -612,6 +689,24 @@ footer .brand {
 .marketing-experience-text h2 {
   font-size: 20px;
   padding-bottom: 20px;
+}
+
+.marketing-experience .experience-title-section {
+  padding-bottom: 20px;
+}
+
+.marketing-experience-item .img-container {
+  min-height: 400px;
+}
+
+.marketing-experience-item .img-container p {
+  padding: 15px;
+}
+
+.overlay li {
+  text-align: left;
+  padding: 8px 20px;
+  font-weight: var(--fw-bold);
 }
 
 /* .digital-software {
@@ -642,7 +737,7 @@ footer .brand {
 .contact-info h1 {
   text-align: center;
   padding: 40px;
-  font-size: 60px;
+  font-size: var(--fs-h1);
 }
 
 .exit-section {
@@ -652,10 +747,11 @@ footer .brand {
 
 form {
   margin-top: 50px;
+  padding: 20px;
 }
 
 .contact-info h2 {
-  font-size: 50px;
+  font-size: var(--fs-h2);
   text-align: center;
   padding-top: 20px;
 }
@@ -673,7 +769,7 @@ form {
   outline: none;
   border-bottom: 1px solid gray;
   color: rgb(12, 12, 12);
-  font-size: 18px;
+  font-size: var(--fs-body);
   margin-bottom: 16px;
 }
 
@@ -685,7 +781,7 @@ form .submit {
   background-color: rgb(81, 158, 158);
   border-color: transparent;
   color: #ffff;
-  font-size: 20px;
+  font-size: var(--fs-body);
   font-weight: bold;
   letter-spacing: 2px;
   height: 50px;
@@ -702,7 +798,7 @@ form .submit:hover {
 @media (max-width: 975px) {
   :root {
     --fs-h1: 4rem;
-    --fs-h2: 3rem;
+    --fs-h2: 2.5rem;
     --fs-h3: 2rem;
     --fs-body: 1rem;
   }
@@ -777,7 +873,7 @@ form .submit:hover {
 
 /* Tablet View */
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 768px) {
   :root {
     --fs-h1: 3.8rem;
     --fs-h2: 2.8rem;
@@ -808,10 +904,6 @@ form .submit:hover {
   .hamburger {
     display: block;
     cursor: pointer;
-  }
-
-  .nav-mobile-menu {
-    transition: 0.3s ease;
   }
 
   .hamburger.active #bar2 {
@@ -861,10 +953,10 @@ form .submit:hover {
 
 @media (max-width: 500px) {
   :root {
-    --fs-h1: 2.5rem;
+    --fs-h1: 3.5rem;
     --fs-h2: 2.5rem;
-    --fs-h3: 2rem;
-    --fs-body: 0.5rem;
+    --fs-h3: 1.5rem;
+    --fs-body: 1rem;
   }
   .interest-item {
     width: 95%;

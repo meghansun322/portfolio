@@ -28,38 +28,47 @@
 
     <section class="navbar">
         <div class="top-border"></div>
+    <div class="header">
 
-        <!-- Header Section -->
-
-        <div class="header">
-
-            <!-- Brand Name  -->
-            <div class="brand-name">
-                <a href="index.html">Meghan Sun</a>
-                
-            </div>
-            <!-- Right Side Nav Buttons -->
-            <div class="nav-menu nav-mobile-menu">
-                <li> <a class="active" href="index.html">HOME</a></li>
-
-                <li><a href="about.html">ABOUT ME</a></li>
-
-                <li><a href="experience.html">EXPERIENCE</a></li>
-
-                <li><a href="blog.html">FOOD PHOTOGRAPHY</a></li>
-
-                <li> <a href="contact.html">CONTACT</a></li>
-               
-    
-            </div>
-
-            <div class="hamburger" onclick="onClickMenu()">
-                <span id="bar1" class="bar"></span>
-                <span id="bar2" class="bar"></span>
-                <span id="bar3" class="bar"></span>
-            </div>
+        <!-- Brand Name  -->
+        <div class="brand-name">
+            <a href="index.html">Meghan Sun</a>
+            
         </div>
-    </section>
+        <!-- Right Side Nav Buttons -->
+        <div class="nav-menu">
+            <li> <a href="index.html">HOME</a></li>
+
+            <li><a href="about.html">ABOUT ME</a></li>
+
+            <li><a class="active" href="experience.html">EXPERIENCE</a></li>
+
+            <li><a href="blog.html">FOOD PHOTOGRAPHY</a></li>
+
+            <li> <a href="contact.html">CONTACT</a></li>
+           
+
+        </div>
+
+        <div class="nav-mobile-menu">
+            <a href="index.html">HOME</a>
+
+            <a href="about.html">ABOUT ME</a>
+
+            <a href="experience.html">EXPERIENCE</a>
+
+            <a href="blog.html">FOOD PHOTOGRAPHY</a>
+
+            <a href="contact.html">CONTACT</a>
+        </div>
+
+        <div class="hamburger" onclick="onClickMenu()">
+            <span id="bar1" class="bar"></span>
+            <span id="bar2" class="bar"></span>
+            <span id="bar3" class="bar"></span>
+        </div>
+    </div>
+</section>
     <!-- Description about my interests -->
 
     <section class="description">
@@ -72,7 +81,7 @@
               Computer Science, Marketing, and Social Media
           </div>
 
-          <div class="resume-attachment"><a href=""></a></div>
+          <div class="resume-attachment"><a class="resume-btn" href="Resume/Meghan Sun's Resume.pdf">Complete Resume</a></div>
         
     </section>
 
@@ -95,7 +104,7 @@
                 <h1>COVID-19 Data Visualization Website</h1>
                 <div class="img-container">
                    <img src="images/Covid-19 Project Img.jpeg" alt=""> 
-                   <div class="overlay">
+                   <div class="overlay overlay-center">
                      <p> Covid-19 website displaying vaccination and infection data graphically, helping the general public visualize the current state of the pandemic. Sorted data from csv files and displayed it graphically. </p>  
                         
                    </div>
@@ -103,7 +112,7 @@
                 </div>
             <p> <!--Covid-19 website displaying vaccination and infection data graphically, helping the general public visually understand the current state of the pandemic. -->
                 
-                Tools: Python, pandas library, matplotlib, Bootstrap
+                Tools: Python, pandas library, Matplotlib, Bootstrap
                 
 
             </p>  
@@ -118,10 +127,9 @@
 
                 <div class="img-container">
                     <img src="images/portfolio-img.png" alt="">  
-                    <div class="overlay">
-                      <p> Covid-19 website displaying vaccination and infection data graphically, helping the general public visualize the current state of the pandemic. Sorted data from csv files and displayed it graphically. </p>  
-                         <br>
-                         Optum Best Healthcare Hack in the Pearl Hacks Hackathon 2021
+                    <div class="overlay overlay-center">
+                      <p> Spent 40+ hours self-teching web design fundamentals from following tutorials and reading articles to build a portfolio from scratch. I learned about wireframing, flexbox, custom prperties, grid display, and implementing JavaScript. </p>  
+                         
                     </div>
                      
                  </div>
@@ -134,10 +142,9 @@
                 <h1>Dijkstsra Algorithm Assignment</h1>
                 <div class="img-container">
                     <img src="images/dijkstra-algo-img.jpeg" alt="">
-                    <div class="overlay">
-                      <p> Covid-19 website displaying vaccination and infection data graphically, helping the general public visualize the current state of the pandemic. Sorted data from csv files and displayed it graphically. </p>  
-                         <br>
-                         Optum Best Healthcare Hack in the Pearl Hacks Hackathon 2021
+                    <div class="overlay overlay-center">
+                      <p> A COMP 210: Data Structures assignment, ultizing HashMaps and Graphing to implement Dijastra's Algorithm. </p>  
+                         
                     </div>
                      
                  </div>
@@ -222,13 +229,15 @@
     
     </section>
 
-    <section class="experience-title-section">
-        <h1>SOCIAL MEDIA & MARKETING</h1>
-    </section>
+    
 
     <!-- Marketing and Photography Experience -->
 
     <section class="marketing-experience">
+        
+        <section class="experience-title-section">
+            <h1>SOCIAL MEDIA & MARKETING</h1>
+        </section>
         <div class="experience-header"><h1>Experience</h1></div>
 
         <div class="marketing-experience-container flex">
@@ -237,9 +246,11 @@
             <div class="img-container">
                 <img src="images/Andia's-experience.JPG" alt="">
                 <div class="overlay">
-                  <p> Covid-19 website displaying vaccination and infection data graphically, helping the general public visualize the current state of the pandemic. Sorted data from csv files and displayed it graphically. </p>  
-                     <br>
-                     Optum Best Healthcare Hack in the Pearl Hacks Hackathon 2021
+                    <p>
+                        <li>Captures photos and video content to create daily stories to an audience of 14,500+ followers</li>
+                        <li>Responds to all messages and comments within 24 hours</li>
+                        <li>Collaborate with marketing team to develop a plan to promote and ensure quality of new month menu items</li>
+                    </p> 
                 </div>
                  
              </div>
@@ -258,8 +269,14 @@
             <div class="img-container">
                 <img src="images/MeghaneatsNC-experience.JPG" alt="">  
             <div class="overlay">
-              <p> Covid-19 website displaying vaccination and infection data graphically, helping the general public visualize the current state of the pandemic. Sorted data from csv files and displayed it graphically.
-                  <br> Optum Best Healthcare Hack at the Pearls Hack Hackathon 2021 </p>  
+                <p> 
+                    <li>Curated self-taken food photographs and videos through Adobe Lightroom and Adobe Premiere Rush</li> 
+                    <li>Researched local businesses and restaurants to inform the public of its notable qualities</li>
+                    <li>Developed relations with followers and local businesses through active social media</li>
+                    <li>Grew personal brand (+1000 followers from 0) within 6 months</li>
+
+                
+                </p>  
                  
                 
             </div>
@@ -341,5 +358,7 @@
 
     </div>
 </footer>
+
+<script src="index.js"></script>
 
 </html>
