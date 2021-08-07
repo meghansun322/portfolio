@@ -542,6 +542,10 @@ footer .brand {
   max-width: 500px;
 }
 
+.project-item a {
+  color: var(--clr-dark);
+}
+
 .project-item h1 {
   padding-bottom: 0.5em;
 }
