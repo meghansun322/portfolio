@@ -457,8 +457,13 @@ footer .brand {
 /* Food Blog Page */
 
 .portfolio-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1rem -1rem;
+  padding: 3rem 0;
+  justify-content: center;
 }
 
 .food-description-text {
@@ -470,10 +475,14 @@ footer .brand {
   font-size: 20px;
 }
 .food-img {
-  height: 500px;
   width: 100%;
   background-position: center;
   background-size: cover;
+  position: relative;
+  flex: 0 0 30%;
+  margin: 0.25rem;
+  height: 350px;
+  width: 350px;
 }
 
 .food-details {
